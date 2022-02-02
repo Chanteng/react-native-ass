@@ -16,26 +16,32 @@ function App() {
 
         <View style={styles.mother}>
       <Text style={styles.text}>School</Text>
-      <TextInput style={styles.textinput} placeholder="Codetrain Uni. College" />
+      <TextInput style={styles.textinput}>Codetrain Uni. College</TextInput>
      
 
       <Text style={styles.text}>Email</Text>
-      <TextInput style={styles.textinput} placeholder="yrnchanteng@gmail.com" />
+      <TextInput style={styles.textinput}>yrnchanteng@gmail.com</TextInput>
       
      
       <Text style={styles.text}>Name</Text>
-      <TextInput style={styles.input} placeholder="Oduro Isaac Sapey" underlineColorAndroid={"transparent"} />
+      <TextInput style={styles.input} underlineColorAndroid={"transparent"}>Oduro Isaac Sapey</TextInput>
       
       <Text style={styles.text}>Nickname</Text>
-      <TextInput style={styles.input} placeholder="MR. CEO" underlineColorAndroid={"transparent"} />
+      <TextInput style={styles.input} underlineColorAndroid={"transparent"}>MR. CEO</TextInput>
       
       <Text style={styles.text}>Emergency Contact</Text>
-      <TextInput style={styles.input} placeholder="0570885254" underlineColorAndroid={"transparent"} />
+      <TextInput style={styles.input} underlineColorAndroid={"transparent"}>0570885254</TextInput>
       
-     
-     
       </View>
 
+
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>
+            UPDATE PROFILE
+          </Text>
+        </TouchableOpacity>
+      </View>
 
     </SafeAreaView>
   );
@@ -75,7 +81,22 @@ input: {
  borderBottomWidth: 1
 },
 
+buttonContainer: {
+marginEnd: 40,
+marginStart: 40,
+},
 
+buttonText: {
+color: "white"
+},
+
+button: {
+alignItems: "center",
+justifyContent: "center",
+backgroundColor: "#02a0d9",
+height: 50,
+borderRadius: 30
+},
 
 img: {
     height: 200,
